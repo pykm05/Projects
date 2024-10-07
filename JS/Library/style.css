@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 75px 1fr / 300px 1fr;
+  grid-template-areas: 
+    "header header"
+    "sidebar main";
+}
+
+header {
+  grid-area: header;
+  color: white;
+  background-color: var(--blue);
+  font-size: 30px;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: solid green;
+  display: flex;
+
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.main > .book-container {
+  border: solid rgb(216, 216, 216);
+  width: 750px;
+}
