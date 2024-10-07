@@ -37,7 +37,7 @@ header {
   padding: 50px;
 }
 
-.main > .book-container {
+.main > #book-container {
   border: solid rgb(216, 216, 216);
   width: 750px;
 }
