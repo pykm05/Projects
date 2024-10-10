@@ -13,7 +13,28 @@
 </head>
 <body>
   <header>Library</header>
-  <div class="sidebar"></div>
+  <div class="sidebar">
+    <form action="#" method="get">
+      <label for="author">Author:</label>
+      <input type="text" name="author" id="author" autocomplete="off" required><br>
+
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title" autocomplete="off" required><br>
+      
+      <label for="pageCount">Page Count:</label>
+      <input type="number" name="pageCount" id="pageCount"  required><br>
+      
+      <label for="hasRead">Have read</label><br>
+
+      <label for="yes">yes</label>
+      <input type="radio" name="hasRead" id="yes" required>
+
+      <label for="no">no</label>
+      <input type="radio" name="hasRead" id="no" required><br>
+
+      <button type="submit" id="submit">New Book</button>
+    </form>
+  </div>
   <div class="main">
     <div id="book-container">
       <div class="book">
